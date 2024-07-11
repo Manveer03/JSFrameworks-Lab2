@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Lab2-JS-frameworks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2-JS-frameworks</title>
 </head>
 <body>
-  <h1>Welcome to the Lab2-JS-frameworks Demo</h1>
-  <p>This is the main page of the demo site.</p>
+    <h1>Welcome to the Lab2-JS-frameworks Demo</h1>
+    <p>This project demonstrates the use of Express and Node.js for creating server-side applications.</p>
+
+    <h2>Utility Functions Demonstration</h2>
+    <p id="greet"></p>
+    <p id="convert"></p>
+    <p id="calculate"></p>
+    <p id="advanced"></p>
+
+    <h2>Links</h2>
+    <p><a href="https://github.com/Manveer03/JSFrameworks-Lab2" title="read my code" target="_blank">View Repository on GitHub</a></p>
+    <p><a href="https://manveer03.github.io/JSFrameworks-Lab2" title="view live demo" target="_blank">View Live Demo</a></p>
+
+    <script src="utilities.js"></script>
+    <script>
+        // Call the functions and display their output in the HTML
+        document.getElementById('greet').textContent = greet("Dr.", "Jane", "Smith");
+        document.getElementById('convert').textContent = `10 kilometers is ${convert(10)} miles`;
+        document.getElementById('calculate').textContent = `The sum of 1, 2, 3, 4, and 5 is ${calculate(1, 2, 3, 4, 5)}`;
+        document.getElementById('advanced').textContent = `Is 11 a prime number? ${advancedFunction(11)}`;
+    </script>
 </body>
 </html>
